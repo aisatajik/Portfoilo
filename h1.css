@@ -1,0 +1,232 @@
+```css * {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  width: auto;
+  margin: 5%;
+  box-shadow: 10px 10px 8px 10px #888888;
+}
+
+/*header part*/
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#menu {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-left: 50px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+li {
+  font-size: 20px;
+}
+
+li:hover {
+  background-color: cornflowerblue;
+  font-size: 20px;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  border: 5px black dotted;
+}
+
+#h11 {
+  margin-left: 20px;
+}
+
+#talkbutt {
+  background-color: cornflowerblue;
+  color: white;
+  margin-right: 60px;
+  width: 100px;
+  padding: 5px 20px;
+  border: 0px;
+  border-radius: 5px;
+  margin-top: 0px;
+}
+
+/*body part*/
+
+#body {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 60px;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  min-height: 550px;
+  overflow: hidden;
+}
+
+.textcontainer {
+  width: 400px;
+  line-height: 1.8;
+  font-size: 20px;
+}
+
+p {
+  color: rgb(80, 78, 78);
+  text-align: justify;
+  line-height: normal;
+  font-weight: lighter;
+  font-size: 12px;
+}
+
+.buts {
+  margin-top: 20px;
+  display: flex;
+  height: auto;
+  gap: 20px;
+}
+
+#but1 {
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 5px;
+  border: 0px;
+  padding: 5px;
+  width: 100px;
+}
+
+#but2 {
+  background-color: white;
+  color: #6495ed;
+  border-radius: 5px;
+  border: 2px cornflowerblue solid;
+  padding: 5px;
+  width: 100px;
+}
+
+#profile {
+  position: absolute;
+  bottom: 0;
+  right: 0px;
+  height: 100%;
+  width: auto;
+}
+
+/*footer icons*/
+
+.socialmedias {
+  display: flex;
+  gap: 5px;
+  position: absolute;
+  bottom: 30px;
+  left: 50px;
+}
+
+.socialmedias button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+.socialmedias img {
+  padding: 2px;
+  width: 30px;
+  height: 30px;
+  border: 2px cornflowerblue double;
+  border-radius: 100%;
+}
+
+/*Tablet*/
+
+@media (max-width: 1024px) {
+  .textcontainer {
+    width: 350px;
+  }
+  #profile {
+    width: 350px;
+  }
+  #body {
+    padding: 30px 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  #body {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 20px;
+    min-height: auto;
+    overflow: visible;
+  }
+  #profile {
+    position: static;
+    width: 250px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .textcontainer {
+    width: 100%;
+  }
+  .buts {
+    justify-content: center;
+  }
+  .socialmedias {
+    position: static;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .header {
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  #menu {
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: 0;
+  }
+  ul {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}
+
+/*Desktop*/
+
+/*Mobile*/
+
+@media (max-width: 480px) {
+  li {
+    font-size: 14px;
+  }
+  #h11 {
+    font-size: 20px;
+    margin-left: 5px;
+  }
+  #talkbutt {
+    margin-right: 10px;
+    width: 80px;
+    font-size: 12px;
+  }
+  #profile {
+    width: 180px;
+  }
+  .textcontainer h1 {
+    font-size: 24px;
+  }
+  .buts button {
+    width: 80px;
+    font-size: 12px;
+  }
+}
